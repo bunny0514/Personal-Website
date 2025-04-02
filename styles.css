@@ -7,7 +7,7 @@ html, body {
 body {
     background: rgb(219, 255, 219);
     color: black;
-    font-family: fantasy;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -181,6 +181,10 @@ footer {
   
     body {
       padding: 10px;
+    }
+
+    .page a{
+        font-size: 14px;
     }
   }
   
