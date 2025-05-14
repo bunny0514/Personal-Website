@@ -126,18 +126,18 @@ figure.projects img {
     width: 100%;
     height: auto;
 }
-figure.drone {
+figure.pics {
     display: block;
     width: 300px;
     height: 450px;
 }
-figure.drone img {
+figure.pics img {
     display: block;
     margin: auto;
     width: 100%;
     height: auto;
 }
-figure.drone figcaption {
+figure.pics figcaption {
     font-size: 0.9em;
     color: #000000;
     display: block;
