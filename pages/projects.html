@@ -1,164 +1,372 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Iris Xu</title>
-        <link rel="stylesheet" href="../styles.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="../scripts/jquery-canvas-sparkles.js"></script>
-    </head>
-    <body>
-       
-        <header>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects | Iris Xu</title>
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/jquery-canvas-sparkles.js"></script>
+</head>
+
+<body>
+    <div class="page-bg"></div>
+
+    <header class="page-hero">
+        <div class="hero-card">
             <h1>Iris Xu</h1>
-            <nav>
+
+            <p class="tagline">
+                Projects in computer systems, embedded programming, robotics, and creative engineering.
+            </p>
+
+            <nav class="site-nav">
                 <ul>
-                    <li class="logo hover-sparkle"><a href = "../index.html">Logo</a></li>
-                    <li class="page hover-sparkle"><a href = "../index.html">Home</a></li>
-                    <li class="page hover-sparkle"><a href = "../pages/projects.html">Projects</a></li>
-                    <li class="page hover-sparkle"><a href = "../pages/contact.html">Contact</a></li>
+                    <li><a href="../index.html" class="hover-sparkle">Home</a></li>
+                    <li><a href="../pages/projects.html" class="hover-sparkle active">Projects</a></li>
+                    <li><a href="../pages/contact.html" class="hover-sparkle">Contact</a></li>
                 </ul>
             </nav>
-        </header>
-        <h2>Github</h2>
-                    <ul>
-                        <li><a href = "https://github.com/bunny0514" target="_blank" class="hover-sparkle">Github Page</a></li>
-                    </ul>
+        </div>
+    </header>
 
+    <main>
+        <section class="section">
+            <h2>GitHub</h2>
+
+            <p>
+                View my code and project repositories here (not fully representative due to 
+                repositories being private):
+            </p>
+
+            <a href="https://github.com/bunny0514" target="_blank" class="button-link hover-sparkle">
+                GitHub Page
+            </a>
+        </section>
+
+        <section class="section">
             <h2>School Projects</h2>
-                    <ul>
-                        <li>CS107E (Computer Systems from the Ground Up)</li>
-                        <p>
-                            Class description: Explores how five concepts come together in computer systems: hardware, architecture, assembly code, the C language, and software development tools.
-                        </p>
-                        <p>
-                            Projects I worked on in this class:
-                            <ul>
-                                <li>Creating a "Larson scanner" pattern for LED lights
-                                    <p></p>
-                                    <div class="video">
-                                        <iframe width="420" height="315"
-                                            src="https://youtube.com/embed/FHy5zWVxECw">
-                                        </iframe>
-                                    </div>
-                                    <div class="video">
-                                        <iframe width="420" height="315"
-                                            src="https://youtube.com/embed/wtfjCCEEPTQ">
-                                        </iframe>
-                                    </div>
-                                    <p>I was also able to implement the 5-light scanner with 3 different levels of brightness, with the center light being the brightest and the outer lights being the dimmest. However, I forgot to take a video!! (Rookie mistake)</p>
-                                </li>
-                                
-                                <li>Creating a countdown clock
-                                    <p></p>
-                                    <div class="video">
-                                        <iframe width="420" height="315"
-                                            src="https://youtube.com/embed/yM-dpc-c0og">
-                                        </iframe>
-                                    </div>
-                                    
-                                </li>
 
-                                <li>Writing the function printf from scratch!</li>
-                                <li>Writing the function malloc from scratch!</li>
+            <article class="project-card">
+                <h3>CS224R: Deep Reinforcement Learning</h3>
 
-                                <li>Connecting a ps2 keyboard to the mango pi using the ps2 protocol
-                                    <p></p>
-                                    <div class="video">
-                                        <iframe width="420" height="315"
-                                            src="https://youtube.com/embed/RevAhdexl6o">
-                                        </iframe>
-                                    </div>
-                                </li>
+                <p>
+                    This course is about algorithms for deep reinforcement learning - 
+                    methods for learning behavior from experience, with a focus on 
+                    practical algorithms that use deep neural networks to learn behavior 
+                    from high-dimensional observations.
+                </p>
 
-                                <li>Connecting a monitor to the mango pi and implementing graphics libraries
-                                <figure class="projects">
-                                    <img src="../images/line.jpg" alt="anti-aliased line">
-                                    <figcaption>Anti-aliased line</figcaption>
-                                </figure>
-                                <figure class="projects">
-                                    <img src="../images/melody.jpg" alt="my melody">
-                                    <figcaption>My melody!</figcaption>
-                                </figure>
-                                </li>
-
-                                <li>My final project!!! A laser gun that shoots at a photodiode matrix! 
-                                    <p>(This was a partner project. Shoutout to my partner Victoria!)</p>
-                                    <div class="video">
-                                        <iframe width="420" height="315"
-                                        src="https://youtube.com/embed/e8IqvSJy3jI">
-                                        </iframe>
-                                    </div>
-                                    <div class="video">
-                                        <iframe width="420" height="315"
-                                            src="https://youtube.com/embed/sRT1JUsXsRo">
-                                        </iframe>
-                                    </div>
-                                    <div class="video">
-                                        <iframe width="420" height="315"
-                                            src="https://youtube.com/embed/NBXCTP5K8ME">
-                                        </iframe>
-                                    </div>
-                                    <div class="video">
-                                        <iframe width="420" height="315"
-                                            src="https://youtube.com/embed/1yZcLYsu1To">
-                                        </iframe>
-                                    </div>
-                                    <div class="video">
-                                        <iframe width="420" height="315"
-                                            src="https://youtube.com/embed/ewxjrGmAZxw">
-                                        </iframe>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </p>
-
-                    
-                    </ul>
-                    <h2>Personal Projects</h2>
+                <h3>Final project: BLIND (Bipedal Locomotion with Intermittent Navigation 
+                    Data for Environmental Hazards) </h3>
+                <div>
+                     <p>
+                        BLIND (Bipedal Locomotion with Intermittent Navigation Data for Environmental 
+                        Hazards) is a reinforcement learning framework based on NVIDIA Isaac Gym, 
+                        designed to train robust locomotion policies for humanoid robots (specifically 
+                        RobotEra's XBot-L) under external hazards and internal failures. This codebase 
+                        builds directly upon the foundational architecture established in Humanoid-Gym: 
+                        Reinforcement Learning for Humanoid Robot with Zero-Shot Sim2Real Transfer.
+                        <br> <br>
+                        Highlight of the framework:
+                        <br>
+                        To teach the policy how to handle intermittent outages, we introduce three masking 
+                        (what we term "blinking") conditions:
                         <ul>
-                            <li>Hacking 3D printers to draw Chinese Calligraphy characters (CalliFlower team)
-                                <ul>
-                                    <li>
-                                    <figure class="pics">
-                                        <img src="../images/character.png" alt="character">
-                                        <figcaption>Successfully drew the Chinese character 你!</figcaption>
-                                    </figure>
-                                    <figure class="pics">
-                                        <img src="../images/working.png" alt="working">
-                                        <figcaption>Working on wiring and Arduino code</figcaption>
-                                    </figure>
-                                    
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>Integrating a Raspberry Pi camera onto drone (Stanford Autonomous Drone team), 
-                                writing script to automatically SSH into Pi and open VLC to view the livestream
-                                <ul>
-                                    <li>
-                                    <figure class="pics">
-                                        <img src="../images/drone.png" alt="drone">
-                                        <figcaption>Flying drone</figcaption>
-                                    </figure>
-                                    <figure class="pics">
-                                        <img src="../images/setup.png" alt="setup">
-                                        <figcaption>Setup with camera and pi wired to computer with ethernet</figcaption>
-                                    </figure>
-                                    <figure class="pics">
-                                        <img src="../images/vlc.jpg" alt="vlc">
-                                        <figcaption>The ceiling as viewed through the camera on VLC!</figcaption>
-                                    </figure>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href = "https://bunny0514.github.io/Maid-Latte" class="hover-sparkle" target="_blank">Fan-made cafe website</a></li>
+                            <li>Proprioceptive Sensor Dropout: Zeroes out the velocity feedback of a randomly 
+                                selected joint in the actor observation for 50 steps (0.5s)</li>
+                            <li>Exteroceptive Radar Blackout: Zeroes out the 7D radar tracking vector for 50
+                                steps, leaving the robot blind to incoming projectiles.</li>
+                            <li>Actuator Limpness: Sets the PD control gains (K_p, K_d) of a randomly 
+                                selected joint to zero for 30 steps (0.3s), rendering the joint 
+                                completely floppy.</li>
                         </ul>
-                    <footer>
-                        Contact: izxu28@stanford.edu
-                </footer>
-                <script src="../scripts/main.js"></script> 
+                    </p>
+                    
+                </div>
+                <!-- <div class="media-grid">
+                        <div class="video">
+                            <iframe 
+                            src="https://www.youtube.com/embed/FHy5zWVxECw" 
+                            title="LED Larson scanner demo 1" 
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                            </iframe>
+                        </div>
+                </div> -->
 
-    </body>
+            </article>
+
+            <article class="project-card">
+                <h3>CS107E: Computer Systems from the Ground Up</h3>
+
+                <p>
+                    This course explores how hardware, computer architecture, assembly code,
+                    the C language, and software development tools come together in computer systems.
+                </p>
+
+                <div class="project-subsection">
+                    <h4>LED Larson Scanner</h4>
+
+                    <p>
+                        Created a Larson scanner pattern for LED lights. I also implemented a
+                        five-light scanner with three brightness levels, where the center light was
+                        brightest and the outer lights were dimmest.
+                    </p>
+
+                    <div class="media-grid">
+                        <div class="video">
+                            <iframe 
+                            src="https://www.youtube.com/embed/FHy5zWVxECw" 
+                            title="LED Larson scanner demo 1" 
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                            </iframe>
+                        </div>
+
+                        <div class="video">
+                            <iframe 
+                            src="https://www.youtube.com/embed/wtfjCCEEPTQ" 
+                            title="LED Larson scanner demo 2" 
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-subsection">
+                    <h4>Countdown Clock</h4>
+
+                    <div class="media-grid">
+                        <div class="video">
+                            <iframe 
+                            src="https://www.youtube.com/embed/yM-dpc-c0og" 
+                            title="Countdown clock demo" 
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-subsection">
+                    <h4>Systems Programming</h4>
+
+                    <ul class="pill-list">
+                        <li>Wrote <code>printf</code> from scratch</li>
+                        <li>Wrote <code>malloc</code> from scratch</li>
+                    </ul>
+                </div>
+
+                <div class="project-subsection">
+                    <h4>PS/2 Keyboard Interface</h4>
+
+                    <p>
+                        Connected a PS/2 keyboard to the Mango Pi using the PS/2 protocol.
+                    </p>
+
+                    <div class="media-grid">
+                        <div class="video">
+                            <iframe 
+                            src="https://www.youtube.com/embed/RevAhdexl6o" 
+                            title="PS/2 keyboard demo" 
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-subsection">
+                    <h4>Graphics Libraries</h4>
+
+                    <p>
+                        Connected a monitor to the Mango Pi and implemented graphics libraries.
+                    </p>
+
+                    <div class="image-grid">
+                        <figure class="project-figure">
+                            <img src="../images/line.jpg" alt="Anti-aliased line">
+                            <figcaption>Anti-aliased line</figcaption>
+                        </figure>
+
+                        <figure class="project-figure">
+                            <img src="../images/melody.jpg" alt="My Melody graphic">
+                            <figcaption>My Melody graphic</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="project-subsection">
+                    <h4>Final Project: Laser Gun and Photodiode Matrix</h4>
+
+                    <p>
+                        Built a laser gun that shoots at a photodiode matrix (with an awesome partner!)
+                    </p>
+
+                    <div class="media-grid">
+                        <div class="video">
+                            <iframe 
+                            src="https://www.youtube.com/embed/e8IqvSJy3jI" 
+                            title="Laser gun demo 1" 
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                            </iframe>
+                        </div>
+
+                        <div class="video">
+                            <iframe 
+                            src="https://www.youtube.com/embed/sRT1JUsXsRo" 
+                            title="Laser gun demo 2" 
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                            </iframe>
+                        </div>
+
+                        <div class="video">
+                            <iframe 
+                            src="https://www.youtube.com/embed/NBXCTP5K8ME" 
+                            title="Laser gun demo 3" 
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                            </iframe>
+                        </div>
+
+                        <div class="video">
+                            <iframe 
+                            src="https://www.youtube.com/embed/1yZcLYsu1To" 
+                            title="Laser gun demo 4" 
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                            </iframe>
+                        </div>
+
+                        <div class="video">
+                            <iframe 
+                            src="https://www.youtube.com/embed/ewxjrGmAZxw" 
+                            title="Laser gun demo 5" 
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2>Personal Projects</h2>
+
+            <article class="project-card">
+                <h3>BuilderBot: End-to-end robotic arm for constructing circuits</h3>
+
+                <p>
+                    Our team is building an end to end robot arm that understands prompts, 
+                    analyzes resources, generates blueprints, and manipulates components 
+                    to build hardware components. Our goal is to create assembly-line-ready 
+                    robots for precise and safe manufacturing.
+                </p>
+
+                <div class="image-grid">
+                    <figure class="project-figure small-project-image">
+                        <img src="../images/builderbot.JPG" alt="Builderbot arm">
+                        <figcaption>Fully constructed and calibrated BuilderBot arm.</figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <h3>CalliFlower: 3D Printer Chinese Calligraphy</h3>
+
+                <p>
+                    Hacked 3D printers to draw Chinese calligraphy characters as part of the
+                    CalliFlower team.
+                </p>
+
+                <div class="image-grid">
+                    <figure class="project-figure">
+                        <img src="../images/character.png" alt="Chinese character drawn by printer">
+                        <figcaption>Successfully drew the Chinese character 你.</figcaption>
+                    </figure>
+
+                    <figure class="project-figure">
+                        <img src="../images/working.png" alt="Wiring and Arduino setup">
+                        <figcaption>Working on wiring and Arduino code.</figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <h3>Stanford Autonomous Drone Team</h3>
+                <p>
+                    Designed and prototyped a long-range, low-latency LoRa communication 
+                    backbone that can act as a redundant, decentralized telemetry and localization 
+                    layer for the SkyRunners team drones, serving as both a 4G fallback and a 
+                    distributed ADS-B–style network connecting drones, base stations, and ground nodes.
+                </p>
+
+                <div class="image-grid">
+                    <figure class="project-figure small-project-image">
+                        <img src="../images/lora.png" alt="Full LoRa prototype">
+                        <figcaption>Full LoRa prototype.</figcaption>
+                    </figure>
+
+                </div>
+
+                <p>
+                    Integrated a Raspberry Pi camera onto a drone, wrote scripts to
+                    automatically SSH into the Pi, view the livestream, and perform
+                    computer vision post-processing.
+                </p>
+
+                <div class="image-grid">
+                    <figure class="project-figure">
+                        <img src="../images/drone.png" alt="Flying drone">
+                        <figcaption>Flying drone.</figcaption>
+                    </figure>
+
+                    <figure class="project-figure">
+                        <img src="../images/setup.png" alt="Camera and Raspberry Pi setup">
+                        <figcaption>Camera and Pi wired to a computer with Ethernet.</figcaption>
+                    </figure>
+
+                    <figure class="project-figure">
+                        <img src="../images/vlc.jpg" alt="Camera view in VLC">
+                        <figcaption>The ceiling as viewed through the camera on VLC.</figcaption>
+                    </figure>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: <a href="mailto:izxu28@stanford.edu">izxu28@stanford.edu</a></p>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+</body>
 </html>
