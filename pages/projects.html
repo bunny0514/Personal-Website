@@ -85,24 +85,93 @@
                         </ul>
                         <br><br> 
                         View full project paper here: <a href="https://cs224r.stanford.edu/projects/pdfs/Iris%20Zixiao%20Xu%20Jamin%20Jia-Ming%20Xie%20Eric%20Liang%20submission_416288445/CS_224R_Final_Report__BLIND__1_.pdf"
-                        target="_blank">Full report</a>
-                        
+                        target="_blank">Full report</a>                                 
                     </p>
                     
                 </div>
-                <!-- <div class="media-grid">
+                <div class="media-grid">
                         <div class="video">
-                            <iframe 
-                            src="https://www.youtube.com/embed/FHy5zWVxECw" 
-                            title="LED Larson scanner demo 1" 
-                            allowfullscreen
-                            loading="lazy"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                            <iframe width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/3ybnnhxn4Lw?si=fqHPQqSEhjmjcUFR" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
                             </iframe>
                         </div>
-                </div> -->
+                        <div class="video">
+                            <iframe width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/M3DNS-0X03o?si=D5CGPdg9nX7QT3sL" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                            </iframe>
+                        </div>
+                </div>
 
+            </article>
+
+            <article class="project-card">
+                <h3>CS229: Machine Learning</h3>
+
+                <p>
+                    Topics: statistical pattern recognition, linear and non-linear 
+                    regression, non-parametric methods, exponential family, GLMs, 
+                    support vector machines, kernel methods, deep learning, model/feature 
+                    selection, learning theory, ML advice, clustering, density estimation, 
+                    EM, dimensionality reduction, ICA, PCA, reinforcement learning and 
+                    adaptive control, Markov decision processes, approximate dynamic 
+                    programming, and policy search.
+                </p>
+
+                <h3>Final project: Videre </h3>
+                <div>
+                    <p>
+                        This work explores various machine learning techniques that leverage pretrained 
+                        video encoders to determine whether a given video is real (originally recorded 
+                        on a physical video-recording device) or AI-generated. In the latter case, some 
+                        of the models are able to highlight areas of the video with unrealistic visuo-temporal 
+                        artifacts and inconsistencies, such as flickering or unnatural motion, that may 
+                        suggest a synthetic origin.
+                        <br> <br>
+                        Highlights:
+                        <br>
+                        We evaluate four model families – logistic regression, trees, neural networks, 
+                        and convolutional neural networks – on the DINOv2 video embeddings. The neural 
+                        networks are trained on the same 70/15/15 train-validation-test split, and the 
+                        rest of the classification models are trained on a mini-dataset due to resource 
+                        constraints. All are assessed using accuracy, precision, recall, F1 score, ROC-AUC, and
+                        PR-AUC. We also analyze confusion matrices and ROC/PR curves. These analyses allow us 
+                        to compare the strengths and weaknesses of the model families we chose. We describe 
+                        the graphs in detail at first and then for the following algorithms, we highlight 
+                        any differences or improvements.
+                        <br><br> 
+                        View full project paper here: <a href="pdfs/CS229_Final_Report.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        Full report
+                        </a>                                
+                    </p>
+                    
+                </div>
+                <div class="image-grid">
+                    <figure class="project-figure">
+                        <img src="../images/heatmap.png" alt="Heatmap">
+                        <figcaption>Heatmap of "fakeness" of a video frame.</figcaption>
+                    </figure>
+
+                    <figure class="project-figure">
+                        <img src="../images/poi.png" alt="Points of interest">
+                        <figcaption>Green box shows human-annotated areas of "fakeness". Red points
+                            represent points of interest/"fakeness" identified by our best-performing model.
+                        </figcaption>
+                    </figure>
+                </div>
             </article>
 
             <article class="project-card">
